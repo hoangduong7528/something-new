@@ -4,6 +4,7 @@ tasklist | find /i "ngrok.exe" >Nul && goto check || echo "Tidak bisa mendapatka
 :check
 ping 127.0.0.1 > nul
 cls
-echo RDP by Avishkar Patil
+echo Hello There
+tasklist | find /i "ngrok.exe" > Nul || echo "Ngrok dead"
 
 goto check
