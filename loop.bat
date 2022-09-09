@@ -5,6 +5,6 @@ tasklist | find /i "ngrok.exe" >Nul && goto check || echo "Tidak bisa mendapatka
 ping 127.0.0.1 > nul
 cls
 echo Hello There
-tasklist | find /i "ngrok.exe" > Nul || echo "Ngrok dead"
+tasklist | find /i "ngrok.exe" > Nul && goto check || echo "Ngrok dead" && Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
 
 goto check
