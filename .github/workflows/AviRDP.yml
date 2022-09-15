@@ -12,15 +12,15 @@ jobs:
     - name: Mendownload Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/trishaharth132/something-new/master/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/trishaharth132/something-new/master/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/trishaharth132/something-new/master/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/trishaharth132/something-new/master/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/hoangduong7528/something-new/master/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/hoangduong7528/something-new/master/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/hoangduong7528/something-new/master/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/hoangduong7528/something-new/master/loop.bat -OutFile loop.bat
     - name: Mendownload Launcher.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/trishaharth132/something-new/master/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/trishaharth132/something-new/master/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
-        Invoke-WebRequest https://github.com/trishaharth132/something-new/blob/master/launcher/Ganti%20Password.exe?raw=true -OutFile "Ganti Password.exe"
+        Invoke-WebRequest https://raw.githubusercontent.com/hoangduong7528/something-new/master/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/hoangduong7528/something-new/master/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://github.com/hoangduong7528/something-new/blob/master/launcher/Ganti%20Password.exe?raw=true -OutFile "Ganti Password.exe"
     - name: Mengextract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ke Akun Ngrok.
